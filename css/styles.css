@@ -1,0 +1,515 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul,
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+table,
+tr,
+th,
+td {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+}
+
+/* Header section starts */
+.header .container {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    margin-left: 30px;
+    padding: 10px 0px;
+}
+
+li.active a {
+    color: darkgray;
+    text-transform: capitalize;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 15px;
+    text-transform: uppercase;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    margin-right: 25px;
+}
+
+.search .search-btn {
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    border-radius: 2px;
+    outline: none;
+}
+
+/* Header section ends */
+
+
+/* banner section starts */
+.banner {
+    background-image: url(../img/layout-img-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.banner h1 {
+    text-align: center;
+    color: #fff;
+    font-size: x-large;
+}
+
+/* banner section ends */
+
+
+/* Information section starts */
+.information .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+
+/* left section start */
+.left {
+    padding: 25px 15px;
+}
+
+.left .list ul a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid lightgrey;
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+.panel-title {
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid lightgrey;
+    background-color: #F5F5F5;
+    padding: 8px 15px;
+    margin-top: 15px;
+}
+
+.panel-body {
+    border: 1px solid lightgrey;
+    padding: 0px 15px;
+    font-size: 14px;
+}
+
+.engage-btn {
+    padding: 6px 10px;
+    border-radius: 10%;
+    outline: none;
+    margin-bottom: 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+
+/* left section end */
+
+/* center section start */
+.center {
+    width: 100%;
+    font-size: 14px;
+    padding: 40px 15px 0px 15px;
+}
+
+.error-message {
+    background-color: rgba(242, 222, 223, 255);
+    padding: 10px;
+    border-radius: 2px;
+    color: #b15047;
+}
+
+.fas {
+    margin-right: 5px;
+    color: #e6b8b4;
+    cursor: pointer;
+    float: right;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #f4f4f4;
+    padding: 10px 0px 20px 0px;
+}
+
+.placeholder {
+    height: 120px;
+    width: 120px;
+    background-color: #eeeeee;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: gray;
+}
+
+.text p {
+    font-size: 14px;
+}
+
+.cross-mark {
+    font-size: 14px;
+    font-style: normal;
+}
+
+/* center section end */
+
+
+/* Right section starts */
+.right {
+    width: 100%;
+    padding: 25px 15px;
+}
+
+.login-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-panel-body {
+    font-size: 14px;
+    border: 1px solid lightgrey;
+}
+
+.form-input input {
+    width: 95%;
+    padding: 6px 12px;
+    border: 1px solid lightgrey;
+    border-radius: 2%;
+    font-size: 14px;
+    display: table;
+    margin: 0 auto;
+    margin-top: 10px;
+    outline: none;
+}
+
+.login-btn {
+    padding: 6px 10px;
+    outline: none;
+    margin: 10px 10px;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    border-radius: 10%;
+}
+
+/* Right section ends */
+
+/* Information section ends */
+
+.tech-table {
+    max-width: 50%;
+    margin: auto;
+    padding-left: 18px;
+}
+
+table {
+    max-width: 100%;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+table tr td {
+    padding: 5px 60px;
+}
+
+table tr th {
+    padding: 5px 60px;
+}
+
+
+/* footer starts */
+footer {
+    padding: 15px 0px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* footer ends*/
+
+/* **************************************************************** */
+
+/* responding to iPad */
+@media (max-width: 768px) {
+
+    body {
+        font-size: 12px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .header .container {
+        justify-content: space-around;
+    }
+
+    .menu {
+        margin-left: 0px;
+        padding: 15px 0px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .search {
+        margin-right: 0px;
+    }
+
+    .search .search-btn {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .banner {
+        height: 210px;
+    }
+
+    .banner h1 {
+        font-size: large;
+    }
+
+    .information .container {
+        max-width: 96%;
+        margin: auto;
+        grid-template-columns: 30% 70%;
+    }
+
+    .left {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .center {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .text-img {
+        align-items: flex-start;
+    }
+
+    .right {
+        width: 80%;
+        margin: auto;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .login-btn {
+        margin-left: 14px;
+        padding: 4px 6px;
+    }
+
+    .tech-table {
+        width: 80%;
+        margin: auto;
+        margin-left: 80px;
+    }
+
+    table tr td {
+        padding: 5px 45px;
+    }
+
+    table tr th {
+        padding: 5px 45px;
+    }
+
+    footer {
+        padding: 15px 0px;
+        text-align: center;
+        margin: 0px;
+        font-size: 14px;
+    }
+}
+
+/* iPad responding end */
+
+
+/* **************************************************** */
+
+/* responding to mobiles */
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+
+    .header .container {
+        justify-content: space-around;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        padding: 10px 0px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu a {
+        font-size: 11px;
+    }
+
+    .search {
+        margin-right: 0px;
+    }
+
+    .search .search-btn {
+        font-size: 11px;
+        padding: 4px 6px;
+    }
+
+    .banner {
+        height: 180px;
+    }
+
+    .banner h1 {
+        font-size: medium;
+    }
+
+    .information .container {
+        grid-template-columns: 100%;
+    }
+
+    .left {
+        width: 90%;
+        margin: auto;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .engage-btn {
+        padding: 5px 8px;
+    }
+
+    .center {
+        width: 100%;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .articles {
+        font-size: smaller;
+    }
+
+    .text {
+        font-size: smaller;
+    }
+
+    .text-img {
+        align-items: flex-start;
+    }
+
+    .error-message {
+        font-size: 10px;
+    }
+
+    .fas {
+        font-size: 8px;
+    }
+
+    .right {
+        width: 90%;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .login-btn {
+        margin-left: 8px;
+        padding: 5px 8px;
+    }
+
+    .tech-table {
+        max-width: 100%;
+        margin: auto;
+        margin-left: 0px;
+    }
+
+    table {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    table tr td {
+        padding: 3px 18px;
+        font-size: small;
+    }
+
+    table tr th {
+        padding: 3px 14px;
+        font-size: small;
+    }
+
+    footer {
+        font-size: smaller;
+    }
+}
+
+/* mobile responding end */

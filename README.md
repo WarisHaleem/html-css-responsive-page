@@ -1,0 +1,1 @@
+Responsive HTML and CSS web page done as part of my assignments during training at The One Technologies.
